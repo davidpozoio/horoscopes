@@ -1,0 +1,20 @@
+.card {
+  padding: 20px 10px;
+  width: 300px;
+  height: 200px;
+
+  display: flex;
+  background-color: #000000;
+  color: white;
+  border-radius: 10px;
+}
+
+.image {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.description {
+  text-align: start;
+  margin-left: 20px;
+}
