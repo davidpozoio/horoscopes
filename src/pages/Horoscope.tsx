@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { HoroscopeCardData } from "../model/horoscopeModel";
 import { HoroscopeCard } from "../components/HoroscopeCard";
+import { horoscopeImages } from "../consts/horoscopes";
 
 export function Horoscope() {
   const [horoscopes, setHoroscopes] = useState<HoroscopeCardData[]>([]);
@@ -21,7 +22,7 @@ export function Horoscope() {
         return (
           <HoroscopeCard
             key={index}
-            img={horoscope.img}
+            img={horoscopeImages[horoscope.title]}
             title={horoscope.title}
             description={horoscope.description}
           />
